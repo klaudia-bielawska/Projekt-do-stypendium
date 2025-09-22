@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formularz">
+    <meta name="creation-date" content="10.01.2025">
+    <meta name="author" content="Klaudia Bielawska">
+    <meta name="generator" content="Visual Studio Code">
+    <title>7 Cudów Świata Współczesnego</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="body">
+    <header>
+        <div class="logo" id="up">7 Cudów Świata Współczesnego</div>
+    </header>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Strona główna</a>
+        <a href="mur-ch.html">Wielki Mur Chiński, Petra, Tadź Mahal</a>
+        <a href="statua.html">Statua Chrystusa Zbawiciela, Machu Picchu</a>
+        <a href="itza.html">Chichén Itzá, Koloseum</a>
+        <a href="form.html">Formularz</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
+
+
+
+    <main>
+        <section id="formularz">
+            <h2>Formularz</h2>
+            <form action="mailto:klaudia.bielawska@tm1.edu.pl" method="get">
+                <fieldset>
+                <legend>Który cud najbardziej ci się spodobał?</legend>
+                    <input type="radio" id="mur" name="like" value="mur">
+                        <label for="mur">Wielki Mur Chiński</label><br>
+                    <input type="radio" id="petra" name="like" value="petra">
+                        <label for="petra">Petra</label><br>
+                    <input type="radio" id="statua" name="like" value="statua">
+                        <label for="statua">Statua Chrystusa Zbawiciela</label><br>
+                    <input type="radio" id="machu" name="like" value="machu">
+                        <label for="machu">Machu Picchu</label><br>
+                    <input type="radio" id="itza" name="like" value="itza">
+                        <label for="itza">Chichén Itzá</label><br>
+                    <input type="radio" id="koloseum" name="like" value="koloseum">
+                        <label for="koloseum">Koloseum</label><br>
+                    <input type="radio" id="mahal" name="like" value="mahal">
+                        <label for="mahal">Tadź Mahal</label>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Który chciałbyś zwiedzić?</legend>
+                    <input type="checkbox" id="mur2" name="visit" value="mur2">
+                        <label for="mur2">Wielki Mur Chiński</label><br>
+                    <input type="checkbox" id="petra2" name="visit" value="petra2">
+                        <label for="petra2">Petra</label><br>
+                    <input type="checkbox" id="statua2" name="visit" value="statua2">
+                        <label for="statua2">Statua Chrystusa Zbawiciela</label><br>
+                    <input type="checkbox" id="machu2" name="visit" value="machu2">
+                        <label for="machu2">Machu Picchu</label><br>
+                    <input type="checkbox" id="itza2" name="visit" value="itza2">
+                        <label for="itza2">Chichén Itzá</label><br>
+                    <input type="checkbox" id="koloseum2" name="visit" value="koloseum2">
+                        <label for="koloseum2">Koloseum</label><br>
+                    <input type="checkbox" id="mahal2" name="visit" value="mahal2">
+                        <label for="mahal2">Tadź Mahal</label><br>
+                    </fieldset>
+<br>
+                <textarea id="message" name="message">Napisz coś!</textarea>
+<br>
+                <button type="submit">Wyślij</button>
+                <button type="reset">Wyczyść</button>
+            </form>
+        </section>
+    </main>
+
+    <br>
+    <footer>
+        <p>Klaudia Bielawska 2ta</p>
+    </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+</body>
+</html>
